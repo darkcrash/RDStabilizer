@@ -11,6 +11,8 @@ namespace RDStabilizer
     public partial class ComponentMain : Component
     {
         private bool state = false;
+        private System.Drawing.Icon i1 = Properties.Resources.Icon1;
+        private System.Drawing.Icon i2 = Properties.Resources.Icon2;
 
         public ComponentMain()
         {
@@ -37,11 +39,11 @@ namespace RDStabilizer
         {
             if (state)
             {
-                this.notifyIcon.Icon = Properties.Resources.Icon1;
+                this.notifyIcon.Icon = i1;
             }
             else
             {
-                this.notifyIcon.Icon = Properties.Resources.Icon2;
+                this.notifyIcon.Icon = i2;
             }
             state = !state;
         }
